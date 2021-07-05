@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@200;400&display=swap" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Leaflet CSS below -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
+    <!-- Leaflet JS below -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+    </script>
+    <title>Kyupid</title>
+</head>
+<body>
+    <nav id="navBar">
+        <div class="logo">Kyupid Dev Tool&copy;</div>
+        <div>
+            <ul>
+                <a href="#1"><li class="hover-underline-animation">Market Penetration</a></li> &nbsp;&nbsp;&nbsp;
+                <a href="#2"><li class="hover-underline-animation">Male to Female ratio</a></li>&nbsp;&nbsp;&nbsp;
+                <a href="#3"><li class="hover-underline-animation">Number of Users</a></li>&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>    
+    </nav>   
+    <div class="hero-section">
+        <fieldset id="1">
+            <legend>Pro User Conversions</legend>
+            <div class="flexContainer">
+                <div class="text"> 
+                    <h2>Pro vs Free Users</h2>
+                    <p>Visualizing the percentage of pro users per area <br></p>
+                    <p>Overall average number of pro users are : <span id="propercentage"></span>
+                    
+                </div>
+                <div id="mapid"></div>
+            </div>
+          </fieldset>
+          <fieldset id ="2">
+              <legend>Male to Female ratio</legend>
+              <div class="flexContainer">
+                <div class="text"> 
+                    <h2>Male to Female Users</h2>
+                    <p>Visualizing the male to female ratio per area <br></p>
+                    <p>The overall male to female ratio throughout Bangalore is : <span id="mfratio"></span></p>
+                </div>
+                <div id="mapid1"></div>
+              </div>
+          </fieldset>
+          <fieldset id="3">
+            <legend>Market Penetration</legend>
+            <div class="flexContainer">
+              <div class="text"> 
+                  <h2>Number of users per locality</h2>
+                  <p>Visualizing the number of users per area <br></p>
+                  <p>The total number of users throughout Bangalore are: <span id="ttusers"></span></p>
+              </div>
+              <div id="mapid2"></div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="footer">
+        <p id="contact">Designed by Surya Nelakanti:<br/><br> 
+            <a class="hover-underline-animation" href="https://github.com/SuryaNelakanti">GitHub</a> / 
+            <a class="hover-underline-animation" href="mailto:suryateja.nelakanti@gmail.com">E-Mail</a></p></p>
+    </div>
+      
+
+
+
+    <script src="./scripts/script.js">
+    </script>
+</body>
+</html>
