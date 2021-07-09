@@ -65,7 +65,6 @@
       mavg+=maleUsers[i]
       favg+=femaleUsers[i]
   };
-  console.log(mavg,favg)
   mfavg = mavg+' Males to '+ favg + ' Females, i.e., '+(mavg/favg).toFixed(2)
   document.getElementById("mfratio").innerHTML=(mfavg)
   j=0
