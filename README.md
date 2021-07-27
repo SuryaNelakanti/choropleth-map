@@ -4,4 +4,4 @@ Used Leaflet JS along with maplet for making the Map.
 
 Didn't use any framework, did it entirely in HTML/CSS/JS
 
-Link: https://suryanelakanti.github.io/locale-frontend-task/kyupid.html
+Link: https://suryanelakanti.github.io/choropleth-map/kyupid.html
